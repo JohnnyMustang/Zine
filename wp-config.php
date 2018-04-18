@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp');
+define('DB_NAME', 'zine_test');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -52,14 +52,14 @@ define('WP_ALLOW_MULTISITE', true);
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'w/oTMR}Q0G-I;D@%@|I]8ICO~J!?3}w?q(a5eHZCD0@/>.oLns,>.n sd8+k&=Ts');
-define('SECURE_AUTH_KEY',  'vamXtX(D$8|F)N7-J`%x0Avk%J<.!8HZ?[>@ee|GyF1An`kw.CuL fuI 3Hep!#`');
-define('LOGGED_IN_KEY',    '+yh;PG@s0mFK#zjOYMntubW?*>7jE0o*[?7Zz.OFzQmPHWqMF45jZom^,#cK %MQ');
-define('NONCE_KEY',        'Swoy)DA+)o*I]ZMBT+h%0I#Ps1Tm9wf2pjG1Bb<#[`Zv^d:(ET_0RjCc::y|yP-Q');
-define('AUTH_SALT',        '7b/>ys]qCFY^Q$>vF$VA[T3rj}b^hbX|Z`!Ms7D=i>=pZ`As$jUy%|6@@$3c.,{t');
-define('SECURE_AUTH_SALT', 'Q<chMiWAnrlPjka90S6&6es_&^R?SSuVGqU>E#ERUUR/i]u~;n5P}W#v1qP:R|x7');
-define('LOGGED_IN_SALT',   '2}}`]NyeS%lR!5gr@,j-eF[5_g#(j9OD:kIHMU/bTs0:aihjnxY/WWV[FY7~gV2^');
-define('NONCE_SALT',       'SOPW76S,4eoxQPC#$)6[i5F}x?O2@E>Tw-tzCZT&:=^xRe0e_&oHyuT#/.~i&)5?');
+define('AUTH_KEY',         'XG(=cMfe%D#! }NSo!OQrxU)I#2g1BTK_HBihT&FADzN7V0#)Shg)RO~(i#(<<@:');
+define('SECURE_AUTH_KEY',  '@*~m~WTUPTMw/H~=qXI15DL=9?}>[SFcWv!M@XW)-[/[km<lr9UWhF+{i9<S6>$~');
+define('LOGGED_IN_KEY',    ';fD]Aesl>43(iu=OW:D5@bE{f!II !/7v+`1=7m.Bm#`1.*^wZJFyw8>^&UGUicz');
+define('NONCE_KEY',        'R0:m9J1Wh`%5%W2Z/Ca6:QZPYmmvRAE31.krvK@RP^]aU/pfAKLCdx5HK)nAnDzs');
+define('AUTH_SALT',        'rTd7b7*#BUzKlwewZH;;xx|e[v`_ M>k?[;mB$`]&I4ZXYl8C.99.}=N^YtFOL@~');
+define('SECURE_AUTH_SALT', 'glSlU6cHy&>/EAVY!w`9aujDvIM@c #lWcmpJM,T,l7W7l8Y@B7}ey1~|+>UotCK');
+define('LOGGED_IN_SALT',   '_H`r!`@(=C<`u7-uAzQI>@,QNqf+UAp3<&7Fg|cz;<#k|06# A;T}wtw5tx$Vdwh');
+define('NONCE_SALT',       'UeOsW=N_&A< oizz;YDW=(cllrK#~4&DVWhxcI?-)_GoK_v7e]k2^FdT>,R}Z!;g');
 
 /**#@-*/
 
@@ -69,7 +69,7 @@ define('NONCE_SALT',       'SOPW76S,4eoxQPC#$)6[i5F}x?O2@E>Tw-tzCZT&:=^xRe0e_&oH
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wpt';
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.

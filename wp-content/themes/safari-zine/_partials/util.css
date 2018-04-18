@@ -1,0 +1,39 @@
+/* line 1, ../sass/_partials/util.scss */
+.flex {
+  display: flex;
+}
+/* line 5, ../sass/_partials/util.scss */
+.flex.one-growing-element > * {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+/* line 10, ../sass/_partials/util.scss */
+.flex.one-growing-element .grows {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+/* line 17, ../sass/_partials/util.scss */
+.page-width {
+  max-width: 1110px;
+  margin: auto;
+}
+
+/* line 23, ../sass/_partials/util.scss */
+ul.simple-navbar li {
+  display: inline-block;
+  font-size: 16.0818px;
+  margin-right: 0.5em;
+  border-radius: 0.8em;
+  cursor: pointer;
+}
+/* line 30, ../sass/_partials/util.scss */
+ul.simple-navbar li.primary {
+  font-weight: bold;
+  font-size: 1.23em;
+}
+/* line 39, ../sass/_partials/util.scss */
+ul.simple-navbar li a {
+  color: inherit;
+  text-decoration: none;
+}

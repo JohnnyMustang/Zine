@@ -1,0 +1,22 @@
+/*
+Theme Name: safari-zine
+Author: Safari Zone Design Team
+Description: A theme for the Safari Zine.
+*/
+
+@import "compass";
+@import "compass/reset";
+
+/* utility partials */
+@import '_partials/vars';
+@import '_partials/util';
+
+/* component partials */
+@import '_partials/header';
+
+/* global styles */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+}

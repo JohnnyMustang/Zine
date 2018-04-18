@@ -1,0 +1,39 @@
+#header-container {
+  color: white;
+
+  #navbar {
+    background-color: $dark-green;
+
+    & > div.flex {
+      height: 48px;
+      align-items: center;
+
+      ul.site-navigation {
+        li {
+          height: 34px;
+          line-height: 34px;
+          padding: 0 0.5em;
+
+          &:hover {
+            background-color: $light-green;
+          } 
+        }
+      }
+
+      ul.social-media {
+        li {
+          padding: 0 0.25em;
+        }
+      }
+    }
+  }
+
+  #header {
+    background-color: $light-green;
+    
+    & > div.flex {
+      height: 62.98px;
+      align-items: center;
+    }
+  }
+}
