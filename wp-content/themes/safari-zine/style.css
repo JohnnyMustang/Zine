@@ -84,14 +84,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-grow: 1;
   flex-shrink: 0;
 }
+/* line 16, sass/_partials/util.scss */
+.flex.vertically-centered {
+  align-items: center;
+}
+/* line 20, sass/_partials/util.scss */
+.flex.wraps {
+  flex-wrap: wrap;
+}
 
-/* line 17, sass/_partials/util.scss */
+/* line 25, sass/_partials/util.scss */
 .page-width {
   max-width: 1110px;
   margin: auto;
 }
 
-/* line 23, sass/_partials/util.scss */
+/* line 31, sass/_partials/util.scss */
 ul.simple-navbar li {
   display: inline-block;
   font-size: 16.0818px;
@@ -99,15 +107,33 @@ ul.simple-navbar li {
   border-radius: 0.8em;
   cursor: pointer;
 }
-/* line 30, sass/_partials/util.scss */
+/* line 38, sass/_partials/util.scss */
 ul.simple-navbar li.primary {
   font-weight: bold;
   font-size: 1.23em;
 }
-/* line 39, sass/_partials/util.scss */
+/* line 47, sass/_partials/util.scss */
 ul.simple-navbar li a {
   color: inherit;
   text-decoration: none;
+}
+
+/* line 54, sass/_partials/util.scss */
+.small-divider {
+  background-color: #b9bf82;
+  height: 2px;
+  width: 2em;
+}
+
+/* line 60, sass/_partials/util.scss */
+.has-invisible-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 65, sass/_partials/util.scss */
+img.avatar {
+  border-radius: 25%;
 }
 
 /* component partials */
@@ -148,8 +174,71 @@ ul.simple-navbar li a {
   align-items: center;
 }
 
+/* page partials */
+/* line 1, sass/_partials/single.scss */
+#banner {
+  height: 30em;
+  width: 100vw;
+  background-size: cover;
+  border-bottom: 10px solid #878b5f;
+}
+/* line 7, sass/_partials/single.scss */
+#banner .banner-image-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 12, sass/_partials/single.scss */
+#banner .banner-image-wrapper img.banner-image {
+  display: block;
+  margin: auto;
+  height: 95%;
+}
+
+/* line 20, sass/_partials/single.scss */
+main#page.single {
+  margin-top: 3em;
+}
+/* line 23, sass/_partials/single.scss */
+main#page.single .meta-wrapper {
+  height: 10em;
+}
+/* line 27, sass/_partials/single.scss */
+main#page.single .meta-wrapper div.title-and-excerpt h1.title {
+  font-size: 3em;
+  font-weight: bold;
+  color: #5b5e40;
+}
+/* line 33, sass/_partials/single.scss */
+main#page.single .meta-wrapper div.title-and-excerpt p.excerpt {
+  padding: 0.5em 0;
+}
+/* line 39, sass/_partials/single.scss */
+main#page.single .meta-wrapper .meta .meta-text {
+  text-align: right;
+  padding-right: 1em;
+}
+/* line 43, sass/_partials/single.scss */
+main#page.single .meta-wrapper .meta .meta-text .author {
+  font-weight: bold;
+  color: #5b5e40;
+}
+/* line 48, sass/_partials/single.scss */
+main#page.single .meta-wrapper .meta .meta-text .date {
+  font-style: italic;
+  color: #878b5f;
+}
+/* line 55, sass/_partials/single.scss */
+main#page.single .meta-wrapper .meta .avatar-block img.avatar {
+  height: 5em;
+}
+/* line 62, sass/_partials/single.scss */
+main#page.single p.content {
+  padding-top: 2em;
+}
+
 /* global styles */
-/* line 18, sass/styles.scss */
+/* line 21, sass/style.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;

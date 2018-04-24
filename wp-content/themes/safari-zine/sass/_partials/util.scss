@@ -12,6 +12,14 @@
       flex-shrink: 0;
     }
   }
+
+  &.vertically-centered {
+    align-items: center;
+  }
+
+  &.wraps {
+    flex-wrap: wrap;
+  }
 }
 
 .page-width {
@@ -41,4 +49,19 @@ ul.simple-navbar {
       text-decoration: none;
     }
   }
+}
+
+.small-divider {
+  background-color: $light-green;
+  height: 2px;
+  width: 2em;
+}
+
+.has-invisible-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img.avatar {
+  border-radius: 25%;
 }

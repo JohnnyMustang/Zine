@@ -7,12 +7,18 @@
   add_action('after_setup_theme', 'scratch_setup');
 
   function scratch_styles_and_scripts() {
-    wp_enqueue_style('main-stylesheet', get_stylesheet_directory_uri() . '/styles.css');
+    wp_enqueue_style('main-stylesheet', get_stylesheet_directory_uri() . '/style.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('our-scripts', get_stylesheet_directory_uri() . '/script.js');
   }
 
   add_action('wp_enqueue_scripts', 'scratch_styles_and_scripts');
+
+  function custom_excerpt_length($length) {
+    return 30;
+  }
+
+  add_filter('excerpt_legnth', 'custom_excerpt_length');
 
   // function create_footer_widgets() {
   //   register_sidebar(array(

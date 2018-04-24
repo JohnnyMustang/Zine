@@ -14,6 +14,9 @@ Description: A theme for the Safari Zine.
 /* component partials */
 @import '_partials/header';
 
+/* page partials */
+@import '_partials/single';
+
 /* global styles */
 body {
   font-family: Helvetica, Arial, sans-serif;
